@@ -61,7 +61,13 @@ public class Kawa {
         return size;
     }
 
-
-
-
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Kawa{");
+        sb.append("mleko=").append(mleko);
+        sb.append(", cukier=").append(cukier);
+        sb.append(", size=").append(size);
+        sb.append('}');
+        return sb.toString();
+    }
 }
